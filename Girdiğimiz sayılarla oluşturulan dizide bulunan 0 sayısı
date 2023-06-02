@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i, n = 10, sayac = 0, a[10];
+	for (i = 0; i < n; i++)
+	{
+		cout << "Sayi girin=";
+		cin >> a[i];
+		if (a[i] == 0)
+			sayac++;
+	}
+	cout << "Sifirlarin sayisi:" << sayac << endl;
+	system("pause");
+	return 0;
+}
+
