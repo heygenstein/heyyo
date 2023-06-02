@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Merhaba Kevser" << endl;
+	system("pause");
+	return 0;
+}
+
+
+// yorum
+
+/* Cok
+satırlı
+kod
+*/
