@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	char harf;
+	char a, A, e, E, i, I, o, O, u, U;
+	cout << "Bir harf giriniz:";
+	cin >> harf;
+	if ((harf == 'a') || (harf == 'A'))
+		cout << "sesli" << endl;
+	else if ((harf == 'e') || (harf == 'E'))
+		cout << "sesli" << endl;
+	else if ((harf == 'i') || (harf == 'I'))
+		cout << "sesli" << endl;
+	else if ((harf == 'o') || (harf == 'O'))
+		cout << "sesli" << endl;
+	else if ((harf == 'u') || (harf == 'U'))
+		cout << "sesli" << endl;
+	else
+		cout << "sessiz" << endl;
+	system("pause");
+	return 0;
+}
