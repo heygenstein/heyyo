@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int sayi1, sayi2;
+	float sonuc;
+	char islem;
+	cout << "1.sayiyi giriniz:";
+	cin >> sayi1;
+	cout << "2.sayiyi giriniz:";
+	cin >> sayi2;
+	cout << "Islem Seciniz:";
+	cin >> islem;
+	if (islem == '+')
+	{
+		sonuc = sayi1 + sayi2;
+		cout << "Toplama islemini sectiniz,sonuc:" << sonuc;
+	}
+	else if (islem == '*')
+	{
+		sonuc = sayi1 * sayi2;
+		cout << "Carpma islemini sectiniz,sonuc:" << sonuc;
+	}
+	else if (islem == '-')
+	{
+		sonuc = sayi1 - sayi2;
+		cout << "Cikarma islemini sectiniz,sonuc:" << sonuc;
+	}
+	else if (islem == '/')
+	{
+		sonuc = sayi1 / sayi2;
+		cout << "Bolme islemini sectiniz:" << sonuc;
+	}
+	else
+		cout << "Lutfen 4 islemden birini seciniz!";
+	system("pause");
+	return 0;
+}
