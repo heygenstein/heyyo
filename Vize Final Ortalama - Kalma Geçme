@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int vize, final;
+	float ortalama;
+	cout << "vize notunuzu giriniz:";
+	cin >> vize;
+	cout << "final notunuzu giriniz:";
+	cin >> final;
+	ortalama = vize * 0.4 + final * 0.6;
+	if ((ortalama >= 50) && (final >= 50))
+		cout << "Ortalamaniz:" << ortalama << " " << "Gectiniz\n";
+	else
+		cout << "Ortalamaniz:" << ortalama << " " << "Kaldiniz\n";
+	system("pause");
+	return 0;
+}
