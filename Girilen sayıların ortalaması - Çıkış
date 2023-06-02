@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	float toplam = 0;
+	int sayi;
+	int adet = 0;
+	cout << "Lutfen bir sayi giriniz(ya da cikmak icin -1e basiniz)";
+	cin >> sayi;
+	while (sayi != -1)
+	{
+		adet = adet + 1;
+		toplam = toplam + sayi;
+		cout << "Lutfen bir sayi giriniz(ya da cikmak icin -1e basiniz)";
+		cin >> sayi;
+	}
+	cout << "Ortalama:" << toplam / adet << endl;
+	system("pause");
+	return 0;
+}
