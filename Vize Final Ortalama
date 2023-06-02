@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int vize, final, ortalama;
+	cout << "Vize notunu giriniz:";
+	cin >> vize;
+	cout << "Final notunu giriniz:";
+	cin >> final;
+	ortalama = vize * 0.4 + final * 0.6;
+	cout << "Gecme notunuz:" << ortalama;
+	system("pause");
+	return 0;
+}
+
