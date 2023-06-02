@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a[10] = { 100,-250,400,125,550,900,689,450,347,700 };
+	int max;
+	max = a[0];
+	for (int k = 1; k < 10; k++)
+		if (max < a[k])
+			max = a[k];
+	cout << "En buyuk:" << max << endl;
+	system("pause");
+	return 0;
+}
