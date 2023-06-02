@@ -1,0 +1,22 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i, n;
+	char harf, e, E, karar;
+    basla:
+	cout << "Bir harf giriniz:";
+	cin >> harf;
+	cout << "Kac defa yazilacak:";
+	cin >> n;
+	for (i = 1; i <= n; i++)
+		cout << harf;
+	cout << endl;
+	cout << "Devam etmek icin:E/e basiniz:";
+	cin >> karar;
+	if ((karar == 'E') || (karar == 'e')) goto basla;
+	cout << "Programdan ciktiniz.";
+	system("pause");
+	return 0;
+}
