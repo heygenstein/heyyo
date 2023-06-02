@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int yeniokunan, eskiokunan, abonelikUcreti;
+	float enflasyonOrani, FaturaMiktari, birimfiyat, yenibirimfiyat;
+	float Tuketim;
+	cout << "Yeni Okunan Degeri Giriniz:";
+	cin >> yeniokunan;
+	cout << "Eski Okunan Degeri Giriniz:";
+	cin >> eskiokunan;
+	cout << "Abonelik Ucretini Giriniz:";
+	cin >> abonelikUcreti;
+	cout << "Birim Fiyati Giriniz:";
+	cin >> birimfiyat;
+	cout << "Enflasyon Oranini Giriniz:";
+	cin >> enflasyonOrani;
+	Tuketim = yeniokunan - eskiokunan;
+	yenibirimfiyat = birimfiyat + birimfiyat * enflasyonOrani / 100.0;
+	FaturaMiktari = Tuketim * yenibirimfiyat + abonelikUcreti;
+	cout << "Faturaniz:" << FaturaMiktari;
+	system("pause");
+	return 0;
+}
