@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int secim;
+	float sayi1, sayi2;
+	cout << "1.sayiyi giriniz:";
+	cin >> sayi1;
+	cout << "2.sayiyi giriniz:";
+	cin >> sayi2;
+	cout << "Asagidaki islemlerden birini seciniz:";
+	cout << "Toplama icin 1";
+	cout << "Cikarma icin 2";
+	cout << "Carpma icin 3";
+	cout << "Bolme icin 4 ";
+	cin >> secim;
+	switch (secim)
+{
+	case 1:
+	{
+		cout << "Sonuc:" << sayi1 + sayi2;
+		break;
+	}
+	case 2:
+	{
+		cout << "Sonuc:" << sayi1 - sayi2;
+		break;
+	}
+	case 3:
+	{
+		cout << "Sonuc:" << sayi1 * sayi2;
+		break;
+	}
+	case 4:
+	{
+		cout << "Sonuc:" << sayi1 / sayi2;
+		break;
+	}
+	default:
+	{
+		cout << "4 islemden birini secmediniz.";
+	}
+}
+	system("pause");
+	return 0;
+}
