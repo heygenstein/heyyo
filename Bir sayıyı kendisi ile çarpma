@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i;
+	cout << "Bir sayi giriniz:";
+	cin >> i;
+	i = i * i;
+	cout << "sonuc:" << i;
+	system("pause");
+	return 0;
+}
