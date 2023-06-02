@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i;
+	int x[5] = { 1,5,9,13,34 };
+	for (i = 0; i < 5; i++)
+		cout << "x(" << i << ")=" << x[i] << endl;
+	system("pause");
+	return 0;
+}
