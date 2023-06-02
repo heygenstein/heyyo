@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	float borc = 50;
+	int sayac = 0;
+	while (borc < 100)
+	{
+		borc = borc + 0.02 * borc;
+		sayac++;
+	}
+	cout << sayac << " " << "ay sonra\n" << "borcunuz:" << borc << " " << "TL olacaktir.";
+	system("pause");
+	return 0;
+}
