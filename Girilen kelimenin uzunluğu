@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	char a[50];
+	int k = 0;
+	cout << "Bir sey yaziniz:";
+	cin >> a;
+	while (a[k]!= '\0')
+		k++;
+	cout << "Bu kelimenin uzunlugu:" << k << "karakter" << endl;
+	system("pause");
+	return 0;
+}
+
