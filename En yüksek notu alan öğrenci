@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i, sinavnotu[10], maks = 0; 
+	int imaks;
+	char isim[10][20], soyisim[10][20];
+	for (i = 0; i < 4; i++)
+	{
+		cout << "Isim:";
+		cin >> isim[i];
+		cout << "Soyisim:";
+		cin >> soyisim[i];
+		cout << "Notu:";
+		cin >> sinavnotu[i];
+		if (sinavnotu[i] > maks)
+		{
+			maks = sinavnotu[i];
+			imaks = i;
+		}
+	}
+	cout << "En yuksek notu alan ogrenci:" << endl;
+	cout << isim[imaks] << " " << soyisim[imaks] << endl;
+	cout << "Notu: " << sinavnotu[imaks] << endl;
+}
