@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int i, j, k, toplam, c[3][3];
+	int a[3][3] = { 2,3,4,4,3,2,1,5,6 };
+	int b[3][3] = { 6,7,8,8,7,6,4,3,2 };
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 3; j++)
+		{
+			toplam = 0;
+			for (k = 0; k < 3; k++)
+				toplam += a[i][k] * b[k][j];
+			c[i][j] = toplam;
+		}
+	}
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 3; j++)
+			cout << c[i][j] << "\t";
+		cout << endl;
+	}
+	return 0;
+	system("pause");
+}
