@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	float alan, r;
+	cout << "Yaricapi giriniz:";
+	cin >> r;
+	alan = 3.14 * r;
+	cout << "Alan: " << alan;
+	return 0;
+	system("pause");
+}
