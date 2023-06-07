@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int sayi, sayac, faktoriyel;
+	faktoriyel = 1;
+	cout << "Faktoriyeli hesaplanacak sayiyi giriniz:";
+	cin >> sayi;
+	for (sayac = 1; sayac <= sayi; sayac++)
+	{ 
+		faktoriyel = faktoriyel * sayac;
+	}
+	cout << "Faktoriyel:" <<faktoriyel<< endl;
+	return 0;
+}
