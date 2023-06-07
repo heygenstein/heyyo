@@ -1,0 +1,37 @@
+/* 
+SORU:Bir firma işe alımlarda 40 yaş altı kişileri tercih etmektedir.Bu şartı sağlayan kişilerde de sürücü belgesi olan üniversite mezunlarını tercih etmektedir.Buna göre
+kullanıcıya önce yaşı sorulsun.Yaşı 40 üstü olankara "Üzgünüz,kriterlerimize uymuyorsunuz." uyarısı verilerek programdan çıkılırken; yaş şartı uyanlara diğer iki soruyu
+sorarak işe alınıp alınmadıklarını çıktı olarak veren kodu yazınız.
+*/
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int yas;
+	string surucuBelgesi, universiteMezunu;
+	cout << "Yasinizi Giriniz:";
+	cin >> yas;
+	if (yas < 40)
+	{
+		cout << "Surucu Belgeniz Var mi ?\n";
+		cin >> surucuBelgesi;
+		cout << "Universite Mezunu musunuz?\n";
+		cin >> universiteMezunu;
+		if (surucuBelgesi == "E" && universiteMezunu == "E")
+		{
+			cout << "Ise Alindiniz";
+		}
+		else
+		{
+			cout << "Uzgunuz, kriterlerimize uymuyorsunuz.";
+		}
+	}
+	else
+	{
+		cout << "Uzgunuz, kriterlerimize uymuyorsunuz.";
+	}
+	return 0;
+	system("pause");
+}
