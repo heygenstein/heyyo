@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int yas;
+	cout << "Yasinizi Giriniz:";
+	cin >> yas;
+	if (yas >= 18)
+		cout << "Ehliyete Basvurabilirsiniz";
+	else
+		cout << "Ehliyete Basvuramazsiniz.";
+
+	system("pause");
+}
