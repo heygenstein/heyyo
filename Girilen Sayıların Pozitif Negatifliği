@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int sayi, sayac, pozitifSayi, negatifSayi, sifirSayi;
+	pozitifSayi = 0;
+	negatifSayi = 0;
+	sifirSayi = 0;
+	for (sayac = 1; sayac <= 10; sayac++)
+	{
+		cout << sayac << ". Sayiyi Giriniz" << endl;
+		cin >> sayi;
+		if (sayi > 0)
+		{
+			pozitifSayi = pozitifSayi + 1;
+		}
+		else
+		{
+			if (sayi == 0)
+			{
+				sifirSayi = sifirSayi + 1;
+			}
+		}
+	}
+	cout << "Pozitif Sayi:" << pozitifSayi << "\nNegatif Sayi:" << negatifSayi << "\nSifir Sayisi:" << sifirSayi << endl;
+	return 0;
+}
