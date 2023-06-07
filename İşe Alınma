@@ -15,9 +15,9 @@ int main()
 	cin >> yas;
 	if (yas < 40)
 	{
-		cout << "Surucu Belgeniz Var mi ?\n";
+		cout << "Surucu Belgeniz Var mi ? E\H \n";
 		cin >> surucuBelgesi;
-		cout << "Universite Mezunu musunuz?\n";
+		cout << "Universite Mezunu musunuz? E\H \n";
 		cin >> universiteMezunu;
 		if (surucuBelgesi == "E" && universiteMezunu == "E")
 		{
