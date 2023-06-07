@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int sayi, sayac, toplam = 0;
+	for (sayac = 1; sayac <= 10; sayac++)
+	{ 
+		cout << "Bir sayi giriniz:";
+	cin >> sayi;
+		toplam = toplam + sayi;
+	}
+	cout << "Sayilarin toplami:" << toplam;
+	return 0;
+}
