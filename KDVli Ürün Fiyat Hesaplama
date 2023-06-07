@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	float fiyat, tutar, oran, kdv;
+	cout << "Urunun fiyatini giriniz:";
+	cin >> fiyat;
+	cout << "Urunun KDV oranini giriniz:";
+	cin >> oran;
+	kdv = fiyat * (oran / 100);
+	tutar = fiyat + kdv;
+	cout << "Urunun Kdv miktari: " << kdv;
+	cout<<"\nUrunun tutari: " << tutar;
+	return 0;
+	system("pause");
+}
