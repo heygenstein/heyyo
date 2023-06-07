@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int kisaKenar,uzunKenar,alan,cevre;
+	cout << "Kisa kenar uzunlugunu giriniz:";
+	cin >> kisaKenar;
+	cout << "Uzun kenar uzunlugunu giriniz:";
+	cin >> uzunKenar;
+	cevre = 2 * (kisaKenar + uzunKenar);
+		alan = kisaKenar * uzunKenar;
+		cout <<"Cevre:"<< cevre;
+		cout <<"\nAlan:"<< alan;
+	return 0;
+	system("pause");
+}
