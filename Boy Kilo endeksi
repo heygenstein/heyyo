@@ -1,0 +1,62 @@
+/*
+SORU:Obeziteyi hesaplamak için tüm dünyada Vücut kitle indeksi ( hesaplaması kullanılır VKİ değeriniz kilogram olarak ağırlığınızın, metre cinsinden boy uzunluğunun
+karesine bölünmesiyle (kg/m² elde edilir Girilen boy ve ağırlık değerlerine göre VKİ değerini hesaplayınız ve sonucu aşağıdaki tablo değerlerine göre Kilo Kategorisini 
+ekrana yazdırın.
+*/
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	double boy, kilo, vki;
+	cout << "Boyunuzu metre cinsinden yaziniz:";
+	cin >> boy;
+	cout << "Agirliginizi kilogram cinsinden yaziniz:";
+	cin >> kilo;
+	vki = kilo / (boy * boy);
+	cout << "Vucut endeksiniz:" << vki;
+	if (vki < 18.5)
+	{
+		cout << "Zayif";
+	}
+	else
+	{
+		if (vki >= 18.5 && vki <= 24.9)
+		{
+			cout << "\nSaglikli";
+		}
+		else
+		{
+			if (vki >= 25 && vki <= 29.9)
+			{ 
+				cout << "Fazla Kilolu";
+		}
+		else
+		{
+			if (vki >= 30 && vki <= 34.9)
+			{
+				cout << "1.derece obezite.";
+			}
+			else
+			{
+				if (vki >= 35 && vki <= 39.9)
+				{
+					cout << "2.derece obezite";
+				}
+				else {
+					if (vki >= 40)
+					{
+						cout << "3.derece obezite" << endl;
+					}
+				}
+			}
+			}
+	}
+	}
+	return 0;
+}
