@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int sayi1, sayi2, sayi3;
+	float ortalama;
+	cout << "Birinci sayiyi giriniz:";
+	cin >> sayi1;
+	cout << "Ikinci sayiyi giriniz:";
+	cin >> sayi2;
+	cout << "Ucuncu sayiyi giriniz:";
+	cin >> sayi3;
+	ortalama = (sayi1 + sayi2 + sayi3) / 3;
+	cout << "Ortalama: " << ortalama;
+	return 0;
+	system("pause");
+}
