@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{	
+	int sayi, sayac, asalDurumKontrol;
+	cout << "Bir Sayi Giriniz:" << endl;
+	cin >> sayi;
+	asalDurumKontrol = 0;
+	for (sayac = 2; sayac <= sayi / 2; sayac++)
+	{
+		if (sayi % sayac == 0)
+		{
+			asalDurumKontrol = 1;
+		}
+	}
+	if (asalDurumKontrol == 0)
+	{
+		cout << "Sayiniz Asaldir" << endl;
+	}
+	else
+	{
+		cout << "Sayiniz Asal Degildir" << endl;
+	}
+	return 0;
+}
