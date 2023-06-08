@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{	
+	int sayi, bolen;
+	cout << "Asal Carpanlarini Bulmak Istediginiz Sayiyi Giriniz:";
+	cin >> sayi;
+	bolen = 2;
+	while (sayi > 1)
+	{
+		if (sayi % bolen == 0)
+		{
+			sayi = sayi / bolen;
+			cout << bolen << endl;
+		}
+		else
+		{
+			bolen = bolen + 1;
+		}
+	}
+	
+	return 0;
+}
