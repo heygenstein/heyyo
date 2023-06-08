@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{	
+	int sayi1, sayi2;
+	cout << "1.sayiyi giriniz:";
+	cin >> sayi1;
+	cout << "2.sayiyi giriniz:";
+	cin >> sayi2;
+	while (sayi1!=sayi2)
+	{
+		if (sayi1 > sayi2)
+		{
+			sayi1 = sayi1 - sayi2;
+		}
+		else
+			sayi2 = sayi2 - sayi1;
+	}
+	cout << "Girmis Oldugunuz sayilarin OBEBi\n" << sayi2<<endl;
+	return 0;
+}
