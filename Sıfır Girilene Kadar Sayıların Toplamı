@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int sayi, toplam = 0;
+	cout << "Sayinizi Giriniz:";
+	cin >> sayi;
+	while (sayi != 0)
+	{
+		toplam = toplam + sayi;
+		cout << "Sayinizi Giriniz:";
+		cin >> sayi;
+	}
+	cout << "Girdiginiz sayilarin toplami:" << toplam;
+	
+	return 0;
+}
