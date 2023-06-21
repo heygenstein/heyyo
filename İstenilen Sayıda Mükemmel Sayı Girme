@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{	
+	int sayi, carpanToplami, sayac, mukemmelSayiToplami, mukemmelSayiSayac;
+	cout << "Bir Sayi Giriniz:";
+	cin >> sayi;
+	mukemmelSayiSayac = 2;
+	mukemmelSayiToplami = 0;
+	while (mukemmelSayiToplami < sayi)
+	{
+		carpanToplami = 0;
+		for (sayac = 1; sayac <= mukemmelSayiSayac / 2; sayac++)
+		{
+			if (mukemmelSayiSayac % sayac == 0)
+			{
+				carpanToplami = carpanToplami + sayac;
+			}
+		}
+		if (mukemmelSayiSayac == carpanToplami)
+		{
+			cout << mukemmelSayiSayac << endl;
+			mukemmelSayiToplami = mukemmelSayiToplami + 1;
+		}
+		mukemmelSayiSayac = mukemmelSayiSayac + 1;
+	}
+	return 0;
+}
