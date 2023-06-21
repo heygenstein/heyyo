@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{	
+	int istenenAdet, sayac, asalKontrol, asalSayac, bulunanAdet;
+	bulunanAdet = 0;
+	cout << "Bir sayi giriniz:" ;
+	cin >> istenenAdet;
+	asalSayac = 2;
+	while (bulunanAdet < istenenAdet)
+	{
+		asalKontrol = 0;
+		for(sayac=2;sayac<=asalSayac/2;sayac++)
+		{ 
+			if (asalSayac % sayac == 0)
+			{
+				asalKontrol = 1;
+			}
+	}
+	if (asalKontrol == 0)
+	{
+		cout << asalSayac << endl;
+		bulunanAdet = bulunanAdet + 1;
+	}
+	asalSayac = asalSayac + 1;
+	}
+	return 0;
+}
