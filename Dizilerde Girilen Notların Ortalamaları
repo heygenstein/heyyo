@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{	
+	int sayac,ortalama, notToplami=0;
+	int notlar[5];
+	for (sayac = 0; sayac <= 4; sayac++)
+	{
+		cout << sayac + 1 << ".Notu Giriniz" << endl;
+	    cin >> notlar[sayac];
+		notToplami = notToplami + notlar[sayac];
+	}
+	ortalama = notToplami / 5;
+	cout << ortalama << endl;
+		return 0;
+}
