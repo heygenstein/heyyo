@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+int main()
+{	
+	int gun,i;
+	string gunler[7];
+	gunler[0] = "Pazartesi";
+	gunler[1] = "Sali";
+	gunler[2] = "Carsamba";
+	gunler[3] = "Persembe";
+	gunler[4] = "Cuma";
+	gunler[5] = "Cumartesi";
+	gunler[6] = "Pazar";
+	for (i = 0; i <= 6; i++)
+	{
+		cout << gunler[i] << endl;
+	}
+	return 0;
+}
+
+
+//veya while ile de yapabiliriz.
+
+#include <iostream>
+using namespace std;
+int main()
+{	
+	int gun,i;
+	string gunler[7];
+	gunler[0] = "Pazartesi";
+	gunler[1] = "Sali";
+	gunler[2] = "Carsamba";
+	gunler[3] = "Persembe";
+	gunler[4] = "Cuma";
+	gunler[5] = "Cumartesi";
+	gunler[6] = "Pazar";
+	i = 0;
+	while (i < 7)
+	{
+		cout << gunler[i] << endl;
+		i = i + 1;
+	}
+	return 0;
+}
