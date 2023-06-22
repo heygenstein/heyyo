@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{	
+	int gecici, i, j, k;
+	int sayilar[5] = { 15,22,6,36,8 };
+	for (i = 0; i <= 3; i++)
+	{
+		for (j = 0; j <= 3; j++)
+		{
+			if (sayilar[j] > sayilar[j + 1])
+			{
+				gecici = sayilar[j];
+				sayilar[j] = sayilar[j + 1];
+				sayilar[j + 1] = gecici;
+			}
+		}
+	}
+	for (k = 0; k <= 4; k++)
+	{
+		cout << sayilar[k] << endl;
+	}
+		return 0;
+}
