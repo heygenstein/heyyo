@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{	
+	int i;
+	int notlar[5] = { 80,75,53,62,43 };
+	for (i = 0; i <= 4; i++)
+	{
+		notlar[i] = notlar[i] + 10;
+		cout << notlar[i] << endl;
+	}
+	return 0;
+}
