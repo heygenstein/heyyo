@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{	
+	int dizi[100];
+	int i, sayi, konum, elemanSayisi;
+	cout << "Kac Sayi Girecekseniz" << endl;
+	cin >> elemanSayisi;
+	for (i = 0; i <= elemanSayisi-1; i++)
+	{ 
+		cout << "Bir Sayi Giriniz" << endl;
+	cin >> dizi[i];
+	}
+	cout << "Hangi Konuma Sayi Girilecek" << endl;
+	cin >> konum;
+	cout << "Diziye Eklenecek Sayi Giriniz" << endl;
+	cin >> sayi;
+	for (i = elemanSayisi - 1; i >= konum - 1; i--)
+	{
+		dizi[i + 1] = dizi[i];
+	}
+	dizi[konum - 1] = sayi;
+	for (i = 0; i <= elemanSayisi; i++)
+	{
+		cout << dizi[i] << endl;
+	}
+		return 0;
+}
