@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+void topla(int a, int b);
+
+int main()
+{	
+	int sayi1, sayi2;
+	cout << "1.sayiyi giriniz:"<<endl;
+	cin >> sayi1;
+	cout << "2. sayiyi giriniz:" << endl;
+	cin >> sayi2;
+	topla(sayi1, sayi2);
+	return 0; 
+}
+
+void topla(int a, int b)
+{
+	cout << "Sayi1=" << a << endl;
+	cout << "Sayi2=" << b << endl;
+	int topla;
+
+	topla = a + b;
+	cout << "Toplam=" << topla << endl;
+}
