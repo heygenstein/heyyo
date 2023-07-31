@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+void selamlama();
+
+int main()
+{	
+	selamlama();
+
+	return 0;
+}
+void selamlama()
+{
+	cout << "Sitemize hos geldiniz." << endl;
+}
