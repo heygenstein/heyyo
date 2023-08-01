@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	srand(time(0));
+
+	string harf[26];
+	string kelime;
+
+	kelime = "";
+	int i;
+
+	for (i = 0; i <= 25; i++)
+	{
+		harf[i] = (char)(i + 65);
+	}
+	for (i = 0; i <= 5; i++)
+	{
+		kelime = kelime + harf[rand() % 26];
+	}
+	cout << kelime << endl;
+	return 0;
+
+}
