@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int faktoriyelHesapla(int sayi);
+
+int main()
+{	
+	int n, r, nfakt, rfakt, neksirfakt;
+	double sonuc;
+
+	cout << "n sayisini giriniz" << endl;
+	cin >> n;
+	cout << "r sayisini giriniz" << endl;
+	cin >> r;
+	nfakt = faktoriyelHesapla(n);
+	rfakt = faktoriyelHesapla(r);
+	neksirfakt = faktoriyelHesapla(n - r);
+	sonuc = nfakt / (rfakt * neksirfakt);
+	cout << sonuc << endl;
+	return 0; 
+}
+
+int faktoriyelHesapla(int sayi)
+{
+	int faktoriyelSonuc, i;
+
+	faktoriyelSonuc = 1;
+	for (i = 1; i <= sayi; i++)
+	{
+		faktoriyelSonuc = faktoriyelSonuc * i;
+	}
+	return faktoriyelSonuc;
+}
