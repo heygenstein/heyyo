@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string str, sifrelenmis, karakter;
+
+	sifrelenmis = "";
+	int i, ascii;
+
+	str = "Ahmet";
+	for (i = 0; i <= str.length() - 1; i++)
+	{
+		karakter = str[i];
+		ascii = karakter[0];
+		ascii = ascii + 5;
+		karakter = ascii;
+		sifrelenmis = sifrelenmis + karakter;
+	}
+	cout << sifrelenmis << endl;
+	return 0;
+
+}
