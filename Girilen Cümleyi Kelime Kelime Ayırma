@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string cumle, kelime;
+	int i;
+
+	cumle = "Girilen bir cumlenin kelime kelime ayrilmasini saglayalim.";
+	kelime = "";
+	for (i = 0; i <= cumle.length() - 1; i++)
+	{
+		if (cumle[i] != ' ')
+		{
+			kelime = kelime + cumle[i];
+			if (cumle.length() - 1 == i)
+			{
+				cout << kelime << endl;
+			}
+		}
+		else
+		{
+			cout << kelime << endl;
+			kelime = "";
+		}
+	}
+	return 0;
+}
