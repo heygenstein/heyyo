@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int seriToplami(int baslangic, int bitis);
+
+int main()
+{
+	int sayi1Bas, sayi1Bit, sayi2Bas, sayi2Bit, sayi3Bas, sayi3Bit, toplam;
+	toplam = 0;
+	cout << "1.Serinin Baslangic Degerini Giriniz" << endl;
+	cin >> sayi1Bas;
+	cout << "1.Serinin Bitis Degerini Giriniz" << endl;
+	cin >> sayi1Bit;
+	cout << "2.Serinin Baslangic Degerini Giriniz" << endl;
+	cin >> sayi2Bas;
+	cout << "2.Serinin Bitis Degerini Giriniz" << endl;
+	cin >> sayi2Bit;
+	cout << "3.Serinin Baslangic Degerini Giriniz" << endl;
+	cin >> sayi3Bas;
+	cout << "3.Serinin Bitis Degerini Giriniz" << endl;
+	cin >> sayi3Bit;
+	toplam = seriToplami(sayi1Bas, sayi1Bit) + seriToplami(sayi2Bas, sayi2Bit) + seriToplami(sayi3Bas, sayi3Bit);
+	cout << toplam << endl;
+	return 0;
+}
+
+int seriToplami(int baslangic, int bitis)
+{
+	int seriToplam, i;
+	seriToplam = 0;
+	for (i = baslangic; i <= bitis; i++)
+	{
+		seriToplam = seriToplam + i;
+	}
+	return seriToplam;
+}
