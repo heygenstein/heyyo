@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string str, ters;
+	int i;
+	
+	ters = "";
+	str = "Bilisim Dunyasi";
+	for (i = 0; i <= str.length() - 1; i++)
+	{
+		ters = str[i] + ters;
+	}
+	cout << ters << endl;
+	return 0;
+}
