@@ -1,0 +1,31 @@
+//Klavyeden girilen 10 adet sayıdan çift sayıların toplamının tek sayıların toplamına oranını bulan programın akış diyagramını çiziniz.
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int tekSayiToplami, ciftSayiToplami, girilenSayi, sayac;
+	double oran;
+
+
+	ciftSayiToplami = 0;
+	tekSayiToplami = 0;
+	for (sayac = 1; sayac <= 10; sayac++)
+	{
+		cout << sayac << ".sayiyi giriniz" << endl;
+		cin >> girilenSayi;
+		if (girilenSayi % 2 == 0)
+		{
+			ciftSayiToplami = ciftSayiToplami + girilenSayi;
+		}
+		else
+		{
+			tekSayiToplami = tekSayiToplami + girilenSayi;
+		}
+	}
+	oran = (double) ciftSayiToplami / tekSayiToplami;
+	cout << "Cift Sayilarin Toplaminin Tek Sayilarin Toplaminin Orani:" << oran << endl;
+	return 0;
+}
