@@ -1,0 +1,32 @@
+//Soru : Klavyeden girilen N sayısına göre 1 den N ye kadar olan tek sayıların toplamı ve çarpımı çift sayıların ise karelerinin toplamınıbulan programın 
+akış şemasını oluşturunuz.
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n, tekToplam, tekCarpim, ciftKareToplami, sayac;
+	tekToplam = 0;
+	tekCarpim = 1;
+	ciftKareToplami = 0;
+	cout << "N Sayisini Giriniz" << endl;
+	cin >> n;
+	for (sayac = 1; sayac <= n; sayac++)
+	{
+		if (sayac % 2 == 0)
+		{
+			ciftKareToplami = ciftKareToplami + sayac * sayac;
+		}
+		else
+		{
+			tekCarpim = tekCarpim * sayac;
+			tekToplam = tekToplam + sayac;
+		}
+	}
+	cout << "Tek Sayilarin Toplami:" << tekToplam << endl;
+	cout << "Tek Sayilarin Carpimi:" << tekCarpim << endl;
+	cout << "Cift Sayilarin Kare Toplami:" << ciftKareToplami << endl;
+	return 0;
+}
