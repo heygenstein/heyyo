@@ -1,0 +1,42 @@
+/*
+Soru : Haftanın Hangi Günü? 
+Bugün haftanın hangi günü olduğu program tarafından sorulacak, ve ardından kaç gün sonrası hangi güne denk geldiği hesaplanacak ve ekranda gösterilecektir. 
+Örneğin, bugün günlerden Cuma olsun 9 gün sonra Pazar gününe denk gelmektedir. Program bize Pazar sonucunu döndürmelidir. 
+Gün isimlerini tutmak için dizi kullanılacaktır. 
+*/
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string gunler[7];
+	string bugun;
+	int kacGunSonrasi;
+	int bugunIndisNo, ileriGunIndisNo, sayac;
+
+	ileriGunIndisNo = 0;
+	cout << "Bugun Hangi gun" << endl;
+	cin >> bugun;
+	gunler[0] = "Pazartesi";
+	gunler[1] = "Sali";
+	gunler[2] = "Carsamba";
+	gunler[3] = "Persembe";
+	gunler[4] = "Cuma";
+	gunler[5] = "Cumartesi";
+	gunler[6] = "Pazar";
+	for (sayac = 0; sayac <= 6; sayac++)
+	{
+		if (gunler[sayac] == bugun)
+		{
+			bugunIndisNo = sayac;
+		}
+	}
+	cout << "Kac Gun Sonrasi" << endl;
+	cin >> kacGunSonrasi;
+	ileriGunIndisNo = bugunIndisNo + kacGunSonrasi;
+	ileriGunIndisNo = ileriGunIndisNo % 7;
+	cout << gunler[ileriGunIndisNo] << endl;
+	return 0;
+}
