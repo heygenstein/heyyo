@@ -1,0 +1,21 @@
+// Soru: 1 ile 40 arasında 3’e tam bölünen sayıların adedini bulan programın akış şemasını oluşturun.
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int sayac, adet;
+
+	adet = 0;
+	for (sayac = 1; sayac <= 40; sayac++)
+	{
+		if (sayac % 3 == 0)
+		{
+			adet = adet + 1;
+		}
+	}
+	cout << adet << endl;
+	return 0;
+}
