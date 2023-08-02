@@ -1,0 +1,40 @@
+//Soru: Arka arkaya girilen rastgele 10 tamsayının ortalaması ile bu sayılardan en büyük ve en küçük olanının ortalamasını bularak elde edilen bu iki 
+ortalamanın farkını alan algoritma örneği.
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int toplam, enb, enk, sayac;
+	double tumSayilarinOrtalamasi, enBuyukEnKucukOrtalamasi;
+	toplam = 0;
+	int sayilar[10];
+	for (sayac = 0; sayac <= 9; sayac++)
+	{
+		cout << sayac + 1 << ".sayiyi giriniz" << endl;
+		cin >> sayilar[sayac];
+	}
+	enb = sayilar[0];
+	enk = sayilar[0];
+	for (sayac = 0; sayac <= 9; sayac++)
+	{
+		toplam = toplam + sayilar[sayac];
+		if (enb < sayilar[sayac])
+		{
+			enb = sayilar[sayac];
+		}
+		if (enk > sayilar[sayac])
+		{
+			enk = sayilar[sayac];
+		}
+	}
+	tumSayilarinOrtalamasi = (double)toplam / 10;
+	cout << "Tum Sayilarin Ortalamasi:" << tumSayilarinOrtalamasi << endl;
+	enBuyukEnKucukOrtalamasi= (double)(enb + enk) / 2;
+	cout << "En buyuk sayi ve en kucuk sayinin ortalamasi:" << enBuyukEnKucukOrtalamasi << endl;
+	cout << "iki Ortalamanin Farki:" << tumSayilarinOrtalamasi - enBuyukEnKucukOrtalamasi << endl;
+	return 0;
+}
