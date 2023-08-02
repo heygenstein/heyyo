@@ -1,0 +1,23 @@
+//Klavyeden girilen sayının pozitif tam bölenlerini ve toplamlarını yazdıran algoritma ve akış şemasını oluşturunuz.
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int sayi, pozitifTamBolen, toplam, sayac;
+	toplam = 0;
+	cout << "Bir Sayi Giriniz" << endl;
+	cin >>sayi;
+	for (sayac = 1; sayac <= sayi; sayac++)
+	{
+		if (sayi % sayac == 0)
+		{
+			cout << sayac << endl;
+			toplam = toplam + sayac;
+		}
+	}
+	cout << "Pozitif Tam Bolenlerin Toplami:" << toplam << endl;
+	return 0;
+}
