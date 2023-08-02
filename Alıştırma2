@@ -1,0 +1,35 @@
+/*
+Soru: Girilen sayının 5'in kuvveti olup olmadığını bulan programın algoritma ve akış diyagramını çiziniz.
+Bu soruda girilen sayının 5’in katı olup olmadığına bakıyoruz. Bu soruda dayandığımız mantık sayıyı devamlı 5’e böldürmektir. Kalan 0 olmazsa zaten 5’in katı değildir
+ve programdan çıkarılır. Fakat sayıyı devamlı 5’e bölüp en son artık sayımız azala azala 1 ‘e eşit duruma geldiyse, o zaman 5’in katıdır, deriz.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int sayi;
+	cout << "Bir sayi giriniz" << endl;
+	cin >> sayi;
+	while (sayi > 1)
+	{
+		if (sayi % 5 == 0)
+		{
+			sayi = (int)((double)sayi / 5);
+		}
+		else
+		{
+			sayi = 0;
+		}
+	}
+	if (sayi == 1)
+	{
+		cout << "Sayi 5'in kuvveti" << endl;
+	}
+	else
+	{
+		cout << "Sayi 5'in kuvveti degil" << endl;
+	}
+	return 0;
+}
