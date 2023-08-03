@@ -1,0 +1,42 @@
+//Girilen İki Sayının OBEB'ini Farklı bir Yöntem İle Çözümü
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int sayi1, sayi2, bolen, obeb;
+	cout << "1.sayiyi giriniz" << endl;
+	cin >> sayi1;
+	cout << "2.sayiyi giriniz" << endl;
+	cin >> sayi2;
+	obeb = 1;
+	bolen = 2;
+	while (sayi1 > 1 && sayi2 > 1)
+	{
+		if (sayi1 % bolen == 0 && sayi2 % bolen == 0)
+		{
+			obeb = obeb * bolen;
+			sayi1 = (int)((double)sayi1 / bolen);
+			sayi2 = (int)((double)sayi2 / bolen);
+		}
+		else
+		{
+			if (sayi1 % bolen == 0)
+			{
+				sayi1 = (int)((double)sayi1 / bolen);
+			}
+			if (sayi2 % bolen == 0)
+			{
+				sayi2 = (int)((double)sayi2 / bolen);
+			}
+			if (sayi1 % bolen != 0 && sayi2 % bolen != 0)
+			{
+				bolen = bolen + 1;
+			}
+		}
+	}
+	cout << obeb << endl;
+	return 0;
+}
