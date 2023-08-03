@@ -1,0 +1,45 @@
+/*
+ARMSTRONG SAYILAR
+N haneli bir sayının basamaklarının n’inci üstlerinin toplamı, sayının kendisine eşitse, böyle sayılara Armstrong sayı denir.
+XYZ = X3 + Y3 + Z3 
+Örneğin 407 sayısını ele alalım. (43)+ (03)+(73) = 64+0+343 = 407 sonucunu verir. Bu da 407 sayısının armstrong bir sayı olduğunu gösterir.
+1342 sayısına da bakalım. (14)+(34)+(44)+(24) =1+81+256+16=354 sayısı 1342’ye eşit olmadığı için armstrong sayı olmaz.
+İpucu: Girilen sayının öncelikle kaç basamaklı olduğu bulunulmalı.
+	Daha sonra girilen sayının rakamları tespit edilmeli. 
+*/
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int sayi, toplam, basamakSayisi, gecici, rakam;
+	basamakSayisi = 0;
+	toplam = 0;
+	cout << "Sayi giriniz" << endl;
+	cin >> sayi;
+	gecici = sayi;
+	while (gecici > 0)
+	{
+		gecici = (int)((double)gecici / 10);
+		basamakSayisi = basamakSayisi + 1;
+	}
+	gecici = sayi;
+	while (gecici > 10)
+	{
+		rakam = gecici % 10;
+		gecici = (int)((double)gecici / 10);
+		toplam = (int)(toplam + pow(rakam, basamakSayisi));
+	}
+	if (sayi == toplam)
+	{
+		cout << "Sayiniz Armstrong Sayidir" << endl;
+	}
+	else
+	{
+		cout << "Sayiniz Armstrong Sayi Degildir" << endl;
+	}
+	return 0;
+}
