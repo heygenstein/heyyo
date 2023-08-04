@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x, islem, i;
+
+	cout << "Serinin son sayisini giriniz" << endl;
+	cin >> x;
+	islem = 0;
+	for (i = 1; i <= x; i++)
+	{
+		if (i % 2 == 0)
+		{
+			islem = islem - i;
+		}
+		else
+		{
+			islem = islem + i;
+		}
+	}
+	cout << islem << endl;
+
+	return 0;
+}
