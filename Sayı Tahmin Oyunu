@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	srand(time(0));
+	int rastgele, sayi, denemeSayisi, tahminEdildiMi;
+
+	tahminEdildiMi = 0;
+	denemeSayisi = 0;
+	rastgele = rand() % 100 + 1;
+	cout << rastgele << endl;
+	while (denemeSayisi < 10 && tahminEdildiMi == 0)
+	{
+		cout << "Bir Sayi Giriniz" << endl;
+		cin >> sayi;
+		if (sayi == rastgele)
+		{
+			cout << "Tebrikler Bildiniz" << endl;
+			tahminEdildiMi = 1;
+		}
+		else
+		{
+			if (sayi > rastgele)
+			{
+				cout << "Sayinizi Kucultun" << endl;
+			}
+			else
+			{
+				cout << "Sayinizi Yukseltin" << endl;
+			}
+		}
+		denemeSayisi = denemeSayisi + 1;
+	}
+	if (tahminEdildiMi == 0)
+	{
+		cout << "Üzgünüm Bilemediniz Tuttugum Sayi:" << rastgele << endl;
+	}
+	return 0;
+}
