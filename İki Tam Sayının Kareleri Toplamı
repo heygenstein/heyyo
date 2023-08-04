@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int sayi, a, b, kontrol;
+	kontrol = 0;
+	cout << "Bir sayi giriniz" << endl;
+	cin >> sayi;
+	for (a = 2; a <= (double)sayi / 2; a++)
+	{
+		for (b = 2; b <= (double)sayi / 2; b++)
+		{
+			if (a * a + b * b == sayi)
+			{
+				cout << a << "ve" << b << "Sayilarinin kareleri toplami:" << sayi << endl;
+				kontrol = 1;
+			}
+		}
+	}
+	if (kontrol == 0)
+	{
+		cout << "iki sayinin karesi toplami seklinde yazilamaz" << endl;
+	}
+	return 0;
+}
