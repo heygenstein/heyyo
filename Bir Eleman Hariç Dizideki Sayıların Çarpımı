@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int dizi[5] = { 1,2,3,4,5 };
+	int dizi2[5], i, j, carpim;
+	for (i = 0; i <= 4; i++)
+	{
+		carpim = 1;
+		for (j = 0; j <= 4; j++)
+		{
+			if (i != j)
+			{
+				carpim = carpim * dizi[j];
+			}
+		}
+		dizi2[i] = carpim;
+	}
+	for (i = 0; i <= 4; i++)
+	{
+		cout << dizi2[i] << endl;
+	}
+	return 0;
+}
