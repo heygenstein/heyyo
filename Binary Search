@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int dizi[10] = { 1,4,17,20,24,34,38,41,43,45 };
+	int sag, sol, orta, aranan, bayrak;
+	bayrak = 0;
+	sag = 9;
+	sol = 0;
+	aranan = 45;
+	while (sag >= sol)
+	{
+		orta = (int)((double)(sag + sol) / 2);
+		if (dizi[orta] == aranan)
+		{
+			cout << "Sayiniz " << orta << " Indisde Bulunmustur" << endl;
+			sol = 10;
+			bayrak = 1;
+		}
+		else
+		{
+			if (aranan > dizi[orta])
+			{
+				sol = orta + 1;
+			}
+			else
+			{
+				sag = orta - 1;
+			}
+		}
+
+	}
+	if (bayrak == 0)
+	{
+		cout << "Aradiginiz deger bulunamamistir" << endl;
+	}
+	return 0;
+}
