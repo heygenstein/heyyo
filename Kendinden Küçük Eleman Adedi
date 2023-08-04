@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int dizi[6] = { 7,12,6,3,5,15};
+	int dizi2[6], i, j, sayac;
+	for (i = 0; i <= 5; i++)
+	{
+		sayac = 0;
+		for (j = i + 1; j <= 5; j++)
+		{
+			if (dizi[i] > dizi[j])
+			{
+				sayac = sayac + 1;
+			}
+		}
+		dizi2[i] = sayac;
+	}
+	for (i = 0; i <= 5; i++)
+	{
+		cout << dizi2[i] << endl;
+	}
+	return 0;
+}
