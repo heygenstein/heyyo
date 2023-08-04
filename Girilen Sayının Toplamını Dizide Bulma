@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int dizi[5] = { 6,10,12,9,3};
+	int sayi, i, j, kontrol;
+	kontrol = 0;
+	cout << "Toplamini Bulmak Istediginiz Sayiyi Giriniz:" << endl;
+	cin >> sayi;
+	for(i=0;i<=3;i++)
+	{
+		for (j = i; j <= 4; j++)
+		{
+			if (dizi[i] + dizi[j] == sayi)
+			{
+				cout << dizi[i] << " Sayisi ve " << dizi[j] << " Sayilarin Toplami: " << sayi << endl;
+				kontrol = 1;
+			}
+		}
+	}
+	if (kontrol == 0)
+	{
+		cout << "Toplamini bulmak istediginiz sayilar dizide yoktur" << endl;
+	}
+	return 0;
+}
