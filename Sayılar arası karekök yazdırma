@@ -1,0 +1,18 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+	int i, karekok;
+	cout << "10 ile 1000 arasindaki tam kare sayilar:" << endl;
+	for ( i = 10; i <= 1000; i++)
+	{
+		karekok = sqrt(i);
+		if (karekok * karekok == i)
+		{
+			cout << i <<  endl;
+		}
+	}
+	return 0;
+}
