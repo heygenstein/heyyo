@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int sayi, i, bolen = 2;
+	cout << "Sayinizi giriniz:";
+	cin >> sayi;
+	while (sayi >= bolen)
+	{
+		if (sayi % bolen == 0)
+		{
+			sayi = sayi / bolen;
+			cout << bolen << endl;
+		}
+		else
+		{
+			bolen++;
+		}
+	}
+	return 0;
+}
