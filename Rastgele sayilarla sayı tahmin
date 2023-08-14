@@ -1,0 +1,39 @@
+#include <iostream>
+#include<cstdlib>
+#include<locale>
+using namespace std;
+
+int main()
+{
+	int rastgeleSayi, tahmin, tahminSayisi = 0;
+	srand(time(NULL));
+	rastgeleSayi = rand() % 100 + 1;
+	
+    //Normalde yüzdeli eklemenize gerek yok rastgele sayi verir.
+	//0 ile 99 arasında sayi istiyorsan %100
+	//1 ile 100 arasında sayi istiyorsan %100 +1
+	//500 ile 700 arasında sayi istiyorsan %200+500
+
+	cout << rastgeleSayi << endl;
+	while (1)
+	{
+		tahminSayisi++;
+		cout << "Tahmin girin:";
+		cin >> tahmin;
+		if (tahmin > rastgeleSayi)
+		{
+			cout << "Sayinizi Yukseltin" << endl;
+		}
+		else if(tahmin<rastgeleSayi)
+		{
+			cout << "Sayinizi yukseltin" << endl;
+		}
+		else
+		{
+			cout << "Tebrikler bildiniz." << tahminSayisi << endl;
+			break;
+		}
+	}
+	return 0;
+}
+
