@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+double cevreHesapla(double yaricap)
+{
+	double cevre;
+	cevre = 2 * 3.14 * yaricap;
+	return cevre;
+}
+
+double alanHesapla(double yaricap)
+{
+	double alan;
+	alan = 3.14 * yaricap * yaricap;
+	return alan;
+}
+
+int main(){
+	double r, alan, cevre;
+	cout << "Yaricap bilgisini giriniz:";
+	cin >> r;
+	alan = alanHesapla(r);
+	cevre = cevreHesapla(r);
+
+	cout << "Alan:" << alan << endl;
+	cout << "Cevre:" << cevre << endl;
+}
+
