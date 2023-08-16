@@ -1,0 +1,46 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+int main() {
+	double a;
+	int b;
+	
+	a = 23.56;
+	b = -15;
+
+	//fabs() mutlak degeri bulmak icin kullanilir.
+
+	cout << "fabs():" << fabs(b) << endl;
+
+	//fmod(x,y) mod alma islemini yapar. % sembolu ile ayni islevi gorur.
+
+	cout << "fmod(20,6):" << fmod(20, 6) << endl;
+
+	//ceil() // ondalikli sayiyi ust tam sayiya donusturur.
+
+	cout << "ceil():" << ceil(a) << endl;
+
+	//floor() ondalikli sayiyi ust tam sayiya donusturur.
+
+	cout << "floor():" << floor(a) << endl;
+
+	//round ondalikli sayiyi en yakin tam sayiya yuvarlar.
+
+	cout << "round():" << round(23.49) << endl;
+
+	//cos,sin,tan,acos,asin,atan() radyan cinsinden girilen degerin karsiligini verir.
+
+	cout << "cos(0):" << cos(0) << endl;
+	cout << "sin(0):" << sin(0) << endl;
+
+	//max(x,y),min(x,y) girilen sayilardan buyuk veye kucuk olanini bulmak icin kullanilir.
+
+	cout << "max(36,25):" << max(36, 25) << endl;
+	cout << "min(36,25):" << min(36, 25) << endl;
+
+	//pow(taban,üst)üslü ifadeleri hesaplamak icin kullanılır.
+	cout << "pow(2,5):" << pow(2, 5) << endl;
+
+	//sqrt(x) karekok hesaplamak icin kullanilir.
+	cout << "sqrt(36):" << sqrt(36) << endl;
+
