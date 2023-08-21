@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int toplam(int sayi[], int boyut)
+{
+	int topla = 0;
+	for (int i = 0; i < boyut; i++)
+	{
+		topla += sayi[i];
+	}
+	return topla;
+}
+int main()
+{
+	int topla;
+	int sayilar[] = { 55,25,96,72,78,28 };
+	topla = toplam(sayilar, 6);
+	cout << topla;
+
+	return 0;
+}
