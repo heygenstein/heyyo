@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int sayi[] = { 15,26,32,72 };
+	int sayi2[4];
+	/*
+	for (int i = 0; i < 4; i++)
+	{
+		sayi2[i] = sayi[i];
+	}
+	for (int i = 0; i < 4; i++)
+	{
+		cout << sayi2[i] << endl;
+	}
+	*/
+	cout << sizeof(sayi) << endl;
+	memcpy(sayi2, sayi, sizeof(sayi));
+	for (int i = 0; i < 4; i++)
+	{
+		cout << sayi2[i] << endl;
+	}
+	return 0;
+}
