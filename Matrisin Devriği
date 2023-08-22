@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int matrisA[2][3] = { {1,2,3},{4,5,6} };
+	int matrisB[3][2];
+	for (int sa = 0; sa < 2; sa++)
+	{
+		for (int su = 0; su < 3; su++)
+		{
+			matrisB[su][sa] = matrisA[sa][su];
+		}
+	}
+	for (int sa = 0; sa < 3; sa++)
+	{
+		for (int su = 0; su < 2; su++)
+		{
+			cout << matrisB[sa][su] << "\t";
+		}
+		cout << endl;
+	}
+	return 0;
+}
